@@ -1,15 +1,21 @@
 import React from 'react';
+import { Router } from 'react-router-dom';
 
-import Theme from './Theme';
+import Routes from './routes/index';
+import history from './services/history';
 
-import Home from './pages/Home';
+import GlobalStyle from './styles/global';
+import Theme from './styles/Theme';
 
-// import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Theme>
-      <Home />
+      <Router history={history}>
+        <Routes />
+        <GlobalStyle />
+      </Router>
     </Theme>
   );
 }

@@ -8,6 +8,7 @@ export const LoginButton = styled.button`
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.medium};
   margin: 15px;
+  margin-top: 0;
   padding: 20px 35px;
   position: relative;
   text-align: right;

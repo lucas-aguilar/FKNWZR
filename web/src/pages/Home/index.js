@@ -11,11 +11,11 @@ function Home() {
       <Header />
       <Main>
         <MainHeading>
-          Adivinhe quais notícias são verdadeiras e quais são fake !
+          Adivinhe quais notícias são verdadeiras e quais são fake news !
         </MainHeading>
         <FBLoginButton />
-        <SecondHeading>Login para jogar com amigos !</SecondHeading>
-        <PlayAnon>Ou jogar anônimo</PlayAnon>
+        <PlayAnon>Ou entrar como anônimo</PlayAnon>
+        <SecondHeading>Faça Login e jogue contra seus amigos !</SecondHeading>
       </Main>
     </>
   );
