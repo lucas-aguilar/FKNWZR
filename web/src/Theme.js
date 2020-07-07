@@ -19,9 +19,9 @@ const theme = {
     pixel: 'PixelDigivolve',
   },
   fontSizes: {
-    small: '1.5em',
-    medium: '2em',
-    large: '3em',
+    small: '.80em',
+    medium: '1.2em',
+    large: '2em',
   },
 };
 

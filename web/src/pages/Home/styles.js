@@ -24,15 +24,16 @@ export const SecondHeading = styled.h2`
   text-align: center;
 `;
 export const PlayAnon = styled.button`
+  align-self: center;
   background-color: unset;
   border: none;
   color: ${(props) => props.theme.colors.gray};
   cursor: pointer;
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.small};
+  max-width: 300px;
   text-decoration: underline;
   transition: 200ms ease all;
-
   &:hover {
     color: ${(props) => props.theme.colors.orange};
   }

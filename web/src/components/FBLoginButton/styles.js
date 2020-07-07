@@ -12,7 +12,7 @@ export const LoginButton = styled.button`
   position: relative;
   text-align: right;
   transition: 200ms ease all;
-  width: 430px;
+  width: 300px;
 
   &:hover {
     background-color: ${(props) => props.theme.colors.orange};
@@ -22,7 +22,6 @@ export const LoginButton = styled.button`
     left: 25px;
     top: 9px;
     position: absolute;
-    max-height: 60px;
-    max-width: 60px;
+    max-height: 45px;
   }
 `;

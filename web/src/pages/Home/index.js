@@ -10,10 +10,12 @@ function Home() {
     <>
       <Header />
       <Main>
-        <MainHeading>Guess which news is true and which is fake !</MainHeading>
+        <MainHeading>
+          Adivinhe quais notícias são verdadeiras e quais são fake !
+        </MainHeading>
         <FBLoginButton />
-        <SecondHeading>Login to Play against friends !</SecondHeading>
-        <PlayAnon>Or Play Anonymously</PlayAnon>
+        <SecondHeading>Login para jogar com amigos !</SecondHeading>
+        <PlayAnon>Ou jogar anônimo</PlayAnon>
       </Main>
     </>
   );

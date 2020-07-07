@@ -22,6 +22,6 @@ export const Subtitle = styled.h2`
   color: ${(props) => props.theme.colors.red};
   font-size: ${(props) => props.theme.fontSizes.small};
   font-family: ${(props) => props.theme.fonts.pixel};
-  margin-top: -90px;
+  margin-top: -50px;
   text-align: center;
 `;
