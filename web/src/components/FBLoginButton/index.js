@@ -1,9 +1,16 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { LoginButton } from './styles';
+
+import FacebookImg from '../../assets/images/facebook.png';
 
 function FBLoginButton() {
-  return <div />;
+  return (
+    <LoginButton>
+      <img src={FacebookImg} alt="Facebook Pixelated Logo" />
+      Facebook Login
+    </LoginButton>
+  );
 }
 
 export default FBLoginButton;

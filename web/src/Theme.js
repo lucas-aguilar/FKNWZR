@@ -6,20 +6,22 @@ import './assets/fonts/fonts.css';
 // import { Container } from './styles';
 const theme = {
   colors: {
-    yellow: '#f9c80e',
-    orange: '#f86624',
-    red: '#ea3546',
-    purple: '#662e9b',
+    black: '#333',
     blue: '#43bccd',
+    gray: '#d0cece',
+    orange: '#f86624',
+    purple: '#662e9b',
+    red: '#ea3546',
+    yellow: '#f9c80e',
   },
   fonts: {
     normal: 'Helvetica',
     pixel: 'PixelDigivolve',
   },
   fontSizes: {
-    small: '0.75em',
-    medium: '1em',
-    large: '1.5em',
+    small: '1.5em',
+    medium: '2em',
+    large: '3em',
   },
 };
 
