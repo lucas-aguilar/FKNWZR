@@ -23,6 +23,7 @@ const theme = {
   fontSizes: {
     small: '.80em',
     medium: '1.2em',
+    midLarge: '1.6em',
     large: '2em',
     xl: '3em',
   },
