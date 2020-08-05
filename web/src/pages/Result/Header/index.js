@@ -1,9 +1,25 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { useHistory } from 'react-router-dom';
+import { FaChevronCircleLeft } from 'react-icons/fa';
+
+import { Container, BackButton } from './styles';
 
 function Header() {
-  return <div />;
+  const history = useHistory();
+
+  function handleClick() {
+    history.push('/inicio');
+  }
+
+  return (
+    <Container>
+      <BackButton onClick={handleClick}>
+        <FaChevronCircleLeft size={36} /> <span>Voltar</span>
+      </BackButton>
+      <span> Obrigado por jogar !</span>
+    </Container>
+  );
 }
 
 export default Header;

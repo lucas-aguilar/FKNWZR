@@ -2,8 +2,8 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-function InstructionsModal() {
+function Modal() {
   return <div />;
 }
 
-export default InstructionsModal;
+export default Modal;

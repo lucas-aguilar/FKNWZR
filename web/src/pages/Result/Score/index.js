@@ -1,9 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Container, Points } from './styles';
 
-// import { Container } from './styles';
-
-function Score() {
-  return <div />;
+function Score({ score }) {
+  return (
+    <Container>
+      <span>Resultado: </span>
+      <Points>{score}</Points>
+    </Container>
+  );
 }
+
+Score.propTypes = {
+  score: PropTypes.string.isRequired,
+};
 
 export default Score;
