@@ -10,16 +10,15 @@ import profileImg from '../../../assets/images/profile.png';
 import { Container, ButtonGroupContainer } from './styles';
 
 function Ranking() {
-  const players = [
+  const [filterValue, setFilterValue] = useState('global');
+  const [players] = useState([
     { name: 'Paul Travolta', score: 18, image: profileImg, isFriend: false },
     { name: 'John McCartney', score: 13, image: profileImg, isFriend: false },
     { name: 'John Sons', score: 12, image: profileImg, isFriend: false },
     { name: 'Roberto Augusto', score: 10, image: profileImg, isFriend: true },
     { name: 'João Renato', score: 9, image: profileImg, isFriend: true },
     { name: 'Marco Aurélio', score: 5, image: profileImg, isFriend: true },
-  ];
-
-  const [filterValue, setFilterValue] = useState('global');
+  ]);
   const [rankingPlayers, setRankingPlayers] = useState(players);
 
   const filters = [
@@ -28,10 +27,11 @@ function Ranking() {
   ];
 
   useEffect(() => {
-    if (filterValue === 'friends')
-      setRankingPlayers(players.filter((v) => v.isFriend === true));
-    else setRankingPlayers(players);
-  }, [filterValue]);
+    if (players)
+      if (filterValue === 'friends')
+        setRankingPlayers(players.filter((v) => v.isFriend === true));
+      else setRankingPlayers(players);
+  }, [filterValue, players]);
 
   return (
     <Container>

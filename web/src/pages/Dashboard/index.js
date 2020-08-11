@@ -4,18 +4,17 @@ import Navbar from '../../components/Navbar';
 
 import Header from './Header';
 import PlayerScore from './PlayerScore';
-import Ranking from './Ranking';
+// import Ranking from './Ranking';
 
-// import { Container } from './styles';
+import { Container } from './styles';
 
 function Dashboard() {
   return (
-    <>
+    <Container>
       <Navbar />
       <Header />
-      <PlayerScore />
-      <Ranking />
-    </>
+      <PlayerScore score={0} />
+    </Container>
   );
 }
 

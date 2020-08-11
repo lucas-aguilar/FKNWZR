@@ -10,7 +10,9 @@ function PlayCTABtn() {
     history.push('/desafio');
   }
 
-  return <Container onClick={handleClick}>Jogar o último desafio</Container>;
+  return (
+    <Container onClick={handleClick}>Jogar o {/* último */} desafio</Container>
+  );
 }
 
 export default PlayCTABtn;

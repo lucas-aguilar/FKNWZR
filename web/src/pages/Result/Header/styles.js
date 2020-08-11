@@ -25,10 +25,9 @@ export const BackButton = styled.button`
   position: absolute;
   top: 10px;
   transition: 200ms ease all;
-  border: 3px solid transparent;
+  border-radius: 10px;
 
   &:hover {
-    border-color: ${(props) => props.theme.colors.orange};
     background-color: ${(props) => props.theme.colors.yellow};
     color: ${(props) => props.theme.colors.purple};
   }

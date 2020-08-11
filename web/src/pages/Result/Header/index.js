@@ -9,7 +9,7 @@ function Header() {
   const history = useHistory();
 
   function handleClick() {
-    history.push('/inicio');
+    history.push('/');
   }
 
   return (

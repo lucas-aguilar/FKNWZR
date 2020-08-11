@@ -9,8 +9,8 @@ function Header() {
     <Container>
       <img src={LogoImg} alt="FAKE NEWZER" />
       <Subtitle>
-        --- The Game --- <br />
-        Novos desafios todos os dias !
+        --- The Game --- {/* <br />
+        Novos desafios todos os dias ! */}
       </Subtitle>
     </Container>
   );
