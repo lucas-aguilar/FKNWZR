@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import Routes from './routes/index';
@@ -15,10 +15,10 @@ function App() {
   return (
     <Provider store={store}>
       <Theme>
-        <Router history={history}>
+        <HashRouter history={history}>
           <Routes />
           <GlobalStyle />
-        </Router>
+        </HashRouter>
       </Theme>
     </Provider>
   );

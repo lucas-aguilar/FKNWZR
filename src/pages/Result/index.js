@@ -80,7 +80,7 @@ function Result() {
       {timeBonus && (
         <TimeBonus className="px-3">
           <b>
-            Bonus por tempo: {secondsLeft} seg. = {timeBonus} pts
+            Bônus por tempo: {secondsLeft} seg. = {timeBonus} pts
           </b>
         </TimeBonus>
       )}
