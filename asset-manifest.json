@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/FKNWZR/static/css/main.f9612ffd.chunk.css",
+    "main.js": "/FKNWZR/static/js/main.3fa64301.chunk.js",
+    "main.js.map": "/FKNWZR/static/js/main.3fa64301.chunk.js.map",
+    "runtime-main.js": "/FKNWZR/static/js/runtime-main.a12ec2b9.js",
+    "runtime-main.js.map": "/FKNWZR/static/js/runtime-main.a12ec2b9.js.map",
+    "static/css/2.ace36aee.chunk.css": "/FKNWZR/static/css/2.ace36aee.chunk.css",
+    "static/js/2.74b0b6cc.chunk.js": "/FKNWZR/static/js/2.74b0b6cc.chunk.js",
+    "static/js/2.74b0b6cc.chunk.js.map": "/FKNWZR/static/js/2.74b0b6cc.chunk.js.map",
+    "index.html": "/FKNWZR/index.html",
+    "precache-manifest.52f3f62434e796b584b6a0d631e63395.js": "/FKNWZR/precache-manifest.52f3f62434e796b584b6a0d631e63395.js",
+    "service-worker.js": "/FKNWZR/service-worker.js",
+    "static/css/2.ace36aee.chunk.css.map": "/FKNWZR/static/css/2.ace36aee.chunk.css.map",
+    "static/css/main.f9612ffd.chunk.css.map": "/FKNWZR/static/css/main.f9612ffd.chunk.css.map",
+    "static/js/2.74b0b6cc.chunk.js.LICENSE.txt": "/FKNWZR/static/js/2.74b0b6cc.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/FKNWZR/static/media/Pixel Digivolve.0606cd50.otf",
+    "static/media/logo-symbol.png": "/FKNWZR/static/media/logo-symbol.a6c2c392.png",
+    "static/media/logo-title.png": "/FKNWZR/static/media/logo-title.a3929a1b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a12ec2b9.js",
+    "static/css/2.ace36aee.chunk.css",
+    "static/js/2.74b0b6cc.chunk.js",
+    "static/css/main.f9612ffd.chunk.css",
+    "static/js/main.3fa64301.chunk.js"
+  ]
+}
