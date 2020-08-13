@@ -1,25 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import { useHistory } from 'react-router-dom';
 import { FaChevronCircleLeft } from 'react-icons/fa';
 
 import { Container, BackButton } from './styles';
 
-function Header() {
-  const history = useHistory();
-
-  function handleClick() {
-    history.push('/');
-  }
-
+function Header({ backClickAction }) {
   return (
     <Container>
-      <BackButton onClick={handleClick}>
+      <BackButton onClick={backClickAction}>
         <FaChevronCircleLeft size={36} /> <span>Voltar</span>
       </BackButton>
       <span> Obrigado por jogar !</span>
     </Container>
   );
 }
+
+Header.propTypes = {
+  backClickAction: PropTypes.func.isRequired,
+};
 
 export default Header;

@@ -13,7 +13,7 @@ function Question({ qstText, btnAction }) {
         <Button
           variant="danger"
           onClick={() => {
-            btnAction('fake');
+            btnAction(false);
           }}
         >
           Fake
@@ -21,7 +21,7 @@ function Question({ qstText, btnAction }) {
         <Button
           variant="success"
           onClick={() => {
-            btnAction('real');
+            btnAction(true);
           }}
         >
           Real

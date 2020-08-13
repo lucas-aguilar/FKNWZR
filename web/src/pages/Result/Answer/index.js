@@ -10,24 +10,32 @@ import {
   QuestionLinks,
 } from './styles';
 
-function Answer({ qstText, isFake, isCorrect, links }) {
+function Answer({ qstText, isTrue, isCorrect, links }) {
   return (
     <Container isCorrect={isCorrect}>
       <Header>
-        <Status isFake={isFake}>{isFake ? 'Fake' : 'Real'}</Status>
+        <Status isTrue={isTrue}>{isTrue ? 'Real' : 'Fake'}</Status>
         <Response isCorrect={isCorrect}>
-          {isCorrect ? 'Acertou' : 'Errou'}
+          {isCorrect ? (
+            <>
+              Acertou <span>+10pts</span>
+            </>
+          ) : (
+            <>
+              Errou <span>-10pts</span>
+            </>
+          )}
         </Response>
       </Header>
       <QuestionText>{qstText}</QuestionText>
-      {isFake ? '' : <QuestionLinks>Check links</QuestionLinks>}
+      {isTrue ? <QuestionLinks>Check links</QuestionLinks> : ''}
     </Container>
   );
 }
 
 Answer.propTypes = {
   qstText: PropTypes.string.isRequired,
-  isFake: PropTypes.bool.isRequired,
+  isTrue: PropTypes.bool.isRequired,
   isCorrect: PropTypes.bool.isRequired,
   links: PropTypes.array.isRequired,
 };

@@ -36,11 +36,11 @@ export const QuestionLinks = styled.span`
 
 export const Status = styled.div`
   background-color: ${(props) =>
-    props.isFake ? props.theme.colors.black : props.theme.colors.white};
+    props.isTrue ? props.theme.colors.white : props.theme.colors.black};
   color: ${(props) =>
-    props.isFake ? props.theme.colors.white : props.theme.colors.black};
+    props.isTrue ? props.theme.colors.black : props.theme.colors.white};
   border: ${(props) =>
-    props.isFake ? 'none' : '1px solid ' + props.theme.colors.black};
+    props.isTrue ? '1px solid ' + props.theme.colors.black : 'none'};
   display: flex;
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.medium};
@@ -57,5 +57,13 @@ export const Response = styled.div`
   flex-grow: 1;
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.medium};
+  position: relative;
   text-align: right;
+
+  span {
+    font-family: ${(props) => props.theme.fonts.pixel};
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
 `;

@@ -12,7 +12,7 @@ function Score({ score }) {
 }
 
 Score.propTypes = {
-  score: PropTypes.string.isRequired,
+  score: PropTypes.number.isRequired,
 };
 
 export default Score;
