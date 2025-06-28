@@ -30,6 +30,7 @@ function Challenge() {
     });
     navigate("/resultado");
   }, [dispatch, navigate, secondsLeft]);
+
   const nextQuestion = (answer) => {
     dispatch({
       type: "SET_ANSWERS",

@@ -1,24 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import PlayCTABtn from '../PlayCTABtn/';
-import { Container, Title } from './styles';
+import PlayCTABtn from "../PlayCTABtn/";
+import { Container, Title } from "./styles";
 
 function Header() {
   return (
     <Container>
       <Title>
-        Desafio <br /> <strong>Fake newzer</strong>
+        Fake newzer <br /> <strong>Challenge</strong>
       </Title>
       <p>
-        O desafio te mostrará 10 manchetes, uma de cada vez, e você deverá
-        adivinhar se a notícia é real ou se foi inventada (FAKE).
+        The challenge will show you 10 headlines, one at a time, and you will
+        have to guess whether the news is real or made up (FAKE NEWS)
       </p>
       <p>
-        Você terá 10 segundos para responder cada uma, ou seja, 1:40 para
-        responder tudo. Caso sobre tempo, os segundos serão somados ao seu total
-        de pontos.
+        You will have 60 seconds to answer everything. If you have time left,
+        the seconds will be added to your total points.
       </p>
-      <span>Você está pronto?</span>
+      <span>Are you ready?</span>
       <PlayCTABtn />
     </Container>
   );

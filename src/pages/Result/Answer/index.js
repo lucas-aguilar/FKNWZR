@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Modal from 'react-bootstrap/Modal';
+import React from "react";
+import PropTypes from "prop-types";
+import Modal from "react-bootstrap/Modal";
 
 import {
   Container,
@@ -9,7 +9,7 @@ import {
   Response,
   QuestionText,
   QuestionLinks,
-} from './styles';
+} from "./styles";
 
 function Answer({ qstText, isTrue, isCorrect, links }) {
   const [show, setShow] = React.useState(false);
@@ -21,15 +21,15 @@ function Answer({ qstText, isTrue, isCorrect, links }) {
     <>
       <Container isCorrect={isCorrect}>
         <Header>
-          <Status isTrue={isTrue}>{isTrue ? 'Real' : 'Fake'}</Status>
+          <Status isTrue={isTrue}>{isTrue ? "Real" : "Fake"}</Status>
           <Response isCorrect={isCorrect}>
             {isCorrect ? (
               <>
-                Acertou <span>+10pts</span>
+                Correct <span>+10pts</span>
               </>
             ) : (
               <>
-                Errou <span>-10pts</span>
+                Wrong <span>-10pts</span>
               </>
             )}
           </Response>
@@ -38,7 +38,7 @@ function Answer({ qstText, isTrue, isCorrect, links }) {
         {isTrue ? (
           <QuestionLinks onClick={handleShow}>Check links</QuestionLinks>
         ) : (
-          ''
+          ""
         )}
       </Container>
       <Modal show={show} onHide={handleClose}>

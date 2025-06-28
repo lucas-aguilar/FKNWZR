@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 // import { FaQuestionCircle } from 'react-icons/fa';
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
 function PlayerScore({ score }) {
   return (
     <Container>
-      <span> Pontos:</span> <strong>{score}</strong>
+      <span> Score:</span> <strong>{score}</strong>
       {/* <button>
         <FaQuestionCircle size={40} />
       </button> */}

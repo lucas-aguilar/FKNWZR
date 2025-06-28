@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Main = styled.div`
   background-color: ${(props) => props.theme.colors.purple};
@@ -11,7 +11,8 @@ export const MainHeading = styled.h1`
   color: ${(props) => props.theme.colors.yellow};
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.medium};
-  margin: 0 50px;
+  margin: 0;
+  margin-bottom: 50px;
   padding: 30px 0;
   text-align: center;
 `;

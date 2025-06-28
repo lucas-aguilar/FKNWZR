@@ -8,7 +8,7 @@ function PlayCTABtn() {
     navigate("/desafio");
   }
 
-  return <Container onClick={handleClick}>Jogar AGORA!</Container>;
+  return <Container onClick={handleClick}>Play now!</Container>;
 }
 
 export default PlayCTABtn;

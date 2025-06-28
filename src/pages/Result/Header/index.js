@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { FaChevronCircleLeft } from 'react-icons/fa';
+import { FaChevronCircleLeft } from "react-icons/fa";
 
-import { Container, BackButton } from './styles';
+import { Container, BackButton } from "./styles";
 
 function Header({ backClickAction }) {
   return (
     <Container>
       <BackButton onClick={backClickAction}>
-        <FaChevronCircleLeft size={36} /> <span>Voltar</span>
+        <FaChevronCircleLeft size={36} /> <span>Back</span>
       </BackButton>
-      <span> Obrigado por jogar !</span>
+      <span> Thank you for playing !</span>
     </Container>
   );
 }

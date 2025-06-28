@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.button`
   background-color: ${(props) => props.theme.colors.purple};
@@ -8,6 +8,7 @@ export const Container = styled.button`
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.large};
   margin: 15px 50px;
+  margin-top: 80px;
   padding: 30px;
   text-align: center;
   transition: 200ms ease all;

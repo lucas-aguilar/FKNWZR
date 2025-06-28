@@ -12,7 +12,7 @@ function PlayCTABtn({ hasDone }) {
 
   return (
     <Container onClick={handleClick}>
-      Jogar {hasDone ? "novamente" : "o desafio"}
+      Play {hasDone ? "again" : "the challenge"}
     </Container>
   );
 }

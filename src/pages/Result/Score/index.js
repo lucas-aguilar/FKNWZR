@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Container, Points } from './styles';
+import React from "react";
+import PropTypes from "prop-types";
+import { Container, Points } from "./styles";
 
 function Score({ score }) {
   return (
     <Container>
-      <span>Resultado: </span>
+      <span>Score: </span>
       <Points>{score}</Points>
     </Container>
   );

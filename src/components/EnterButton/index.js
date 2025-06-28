@@ -9,7 +9,7 @@ function EnterButton() {
   function handleClick() {
     navigate("/inicio");
   }
-  return <Btn onClick={handleClick}>Entrar</Btn>;
+  return <Btn onClick={handleClick}>Lets go!</Btn>;
 }
 
 export default EnterButton;
