@@ -1,15 +1,14 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-import { LoginButton } from './styles';
+import { LoginButton } from "./styles";
 
-import FacebookImg from '../../assets/images/facebook.png';
+import FacebookImg from "../../assets/images/facebook.png";
 
 function FBLoginButton() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function handleClick() {
-    history.push('/inicio');
+    navigate("/inicio");
   }
   return (
     <LoginButton onClick={handleClick}>

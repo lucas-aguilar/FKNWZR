@@ -1,13 +1,13 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-import { Btn } from './styles';
+import { Btn } from "./styles";
 
 function EnterButton() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function handleClick() {
-    history.push('/inicio');
+    navigate("/inicio");
   }
   return <Btn onClick={handleClick}>Entrar</Btn>;
 }

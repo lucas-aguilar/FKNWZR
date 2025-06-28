@@ -1,19 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useHistory } from 'react-router-dom';
+import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
 function PlayCTABtn({ hasDone }) {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function handleClick() {
-    history.push('/instrucoes');
+    navigate("/instrucoes");
   }
 
   return (
     <Container onClick={handleClick}>
-      Jogar {hasDone ? 'novamente' : 'o desafio'}
+      Jogar {hasDone ? "novamente" : "o desafio"}
     </Container>
   );
 }

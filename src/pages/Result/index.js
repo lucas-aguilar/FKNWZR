@@ -1,18 +1,18 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
-import { Container, TimeBonus } from './styles';
+import { Container, TimeBonus } from "./styles";
 
-import Answer from './Answer';
-import Header from './Header';
-import Score from './Score';
+import Answer from "./Answer";
+import Header from "./Header";
+import Score from "./Score";
 
-import Navbar from '../../components/Navbar';
+import Navbar from "../../components/Navbar";
 
 function Result() {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const questions = useSelector((state) => state.questionsReducer.questions);
   const answers = useSelector((state) => state.answersReducer.answers);
@@ -20,7 +20,7 @@ function Result() {
 
   const getScore = () => {
     let scr = questions.reduce((acc, cur, idx) => {
-      if (answers[idx] == cur.isTrue) return acc + 10;
+      if (answers[idx] === cur.isTrue) return acc + 10;
       else return acc - 10;
     }, 0);
     if (scr > 0) {
@@ -29,7 +29,7 @@ function Result() {
       scr = 0;
     }
     dispatch({
-      type: 'SET_SCORE',
+      type: "SET_SCORE",
       score: scr,
     });
     return scr;
@@ -39,7 +39,7 @@ function Result() {
   const [timeBonus] = React.useState(
     (() => {
       let score = questions.reduce((acc, cur, idx) => {
-        if (answers[idx] == cur.isTrue) return acc + 10;
+        if (answers[idx] === cur.isTrue) return acc + 10;
         else return acc - 10;
       }, 0);
       return score > 0 ? Math.floor(secondsLeft / 10) : 0;
@@ -47,7 +47,7 @@ function Result() {
   );
 
   const backClickAction = () => {
-    history.push('/inicio');
+    navigate("/inicio");
   };
 
   React.useEffect(() => {
@@ -58,8 +58,8 @@ function Result() {
       !answers.length ||
       !secondsLeft
     )
-      history.push('/inicio');
-  }, []);
+      navigate("/inicio");
+  });
 
   return (
     <Container>
@@ -76,7 +76,7 @@ function Result() {
               links={qst.links}
             />
           ))
-        : ''}
+        : ""}
       {timeBonus && (
         <TimeBonus className="px-3">
           <b>

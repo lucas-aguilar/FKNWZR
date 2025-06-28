@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useState, useEffect, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
-import { Container } from './styles';
+import { Container } from "./styles";
 
-import Topbar from './Topbar';
-import Question from './Question';
+import Topbar from "./Topbar";
+import Question from "./Question";
 
 function Challenge() {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const questions = useSelector((state) => state.questionsReducer.questions);
 
@@ -19,20 +19,20 @@ function Challenge() {
   const [answers, setAnswers] = useState([]);
   const [secondsLeft, setSecondsLeft] = useState(50);
 
-  const goToResults = () => {
+  const goToResults = useCallback(() => {
     dispatch({
-      type: 'SET_SECONDS_LEFT',
+      type: "SET_SECONDS_LEFT",
       secondsLeft: secondsLeft,
     });
     dispatch({
-      type: 'SET_DONE',
+      type: "SET_DONE",
       isDone: true,
     });
-    history.push('/resultado');
-  };
+    navigate("/resultado");
+  }, [dispatch, navigate, secondsLeft]);
   const nextQuestion = (answer) => {
     dispatch({
-      type: 'SET_ANSWERS',
+      type: "SET_ANSWERS",
       answers: [...answers, answer],
     });
     setAnswers((answrs) => {
@@ -55,7 +55,7 @@ function Challenge() {
     } else {
       goToResults();
     }
-  }, [curQstIndex, challengeQuestions, history, goToResults]);
+  }, [curQstIndex, challengeQuestions, navigate, goToResults]);
 
   return (
     <>
