@@ -10,7 +10,11 @@ function Home() {
     <>
       <Header />
       <Main>
-        <MainHeading>Guess which news is true and which is fake</MainHeading>
+        <MainHeading>
+          Guess which news is true
+          <br />
+          and which is fake
+        </MainHeading>
         {/* <FBLoginButton /> */}
         <EnterButton />
         {/* <PlayAnon>Ou entrar como anônimo</PlayAnon> */}

@@ -13,7 +13,7 @@ export const MainHeading = styled.h1`
   font-size: ${(props) => props.theme.fontSizes.medium};
   margin: 0;
   margin-bottom: 50px;
-  padding: 30px 0;
+  padding: 30px;
   text-align: center;
 `;
 export const SecondHeading = styled.h2`
