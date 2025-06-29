@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/FKNWZR/static/css/main.f70b02af.css",
-    "main.js": "/FKNWZR/static/js/main.92a7ce93.js",
+    "main.js": "/FKNWZR/static/js/main.303f0645.js",
     "static/media/Pixel Digivolve.otf": "/FKNWZR/static/media/Pixel Digivolve.dfd416711af7c2a27296.otf",
     "static/media/logo-title.png": "/FKNWZR/static/media/logo-title.d1203957bfe1e56e08b7.png",
     "static/media/logo-symbol.png": "/FKNWZR/static/media/logo-symbol.0cd9d52649cdc86b3343.png",
     "index.html": "/FKNWZR/index.html",
     "main.f70b02af.css.map": "/FKNWZR/static/css/main.f70b02af.css.map",
-    "main.92a7ce93.js.map": "/FKNWZR/static/js/main.92a7ce93.js.map"
+    "main.303f0645.js.map": "/FKNWZR/static/js/main.303f0645.js.map"
   },
   "entrypoints": [
     "static/css/main.f70b02af.css",
-    "static/js/main.92a7ce93.js"
+    "static/js/main.303f0645.js"
   ]
 }
