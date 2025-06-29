@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   color: ${(props) => props.theme.colors.black};
@@ -40,7 +40,7 @@ export const Status = styled.div`
   color: ${(props) =>
     props.isTrue ? props.theme.colors.black : props.theme.colors.white};
   border: ${(props) =>
-    props.isTrue ? '1px solid ' + props.theme.colors.black : 'none'};
+    props.isTrue ? "1px solid " + props.theme.colors.black : "none"};
   display: flex;
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.medium};
@@ -48,22 +48,28 @@ export const Status = styled.div`
 `;
 
 export const Response = styled.div`
-  align-items: center;
-  background-color: ${(props) =>
-    props.isCorrect ? props.theme.colors.green : props.theme.colors.red};
+align-items: center;
+background-color: ${(props) =>
+  props.isCorrect ? props.theme.colors.green : props.theme.colors.red};
   color: ${(props) => props.theme.colors.white};
   display: flex;
-  flex-direction: column;
+  flex-direction: column
   flex-grow: 1;
   font-family: ${(props) => props.theme.fonts.pixel};
   font-size: ${(props) => props.theme.fontSizes.medium};
   position: relative;
   text-align: right;
-
+  width: 100%;
+  padding-left: 20px;
+  
   span {
     font-family: ${(props) => props.theme.fonts.pixel};
     position: absolute;
     right: 5px;
     top: 0;
   }
+  `;
+
+export const SourceLink = styled.span`
+  word-break: break-all;
 `;

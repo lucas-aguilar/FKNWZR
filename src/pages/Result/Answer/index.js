@@ -9,6 +9,7 @@ import {
   Response,
   QuestionText,
   QuestionLinks,
+  SourceLink,
 } from "./styles";
 
 function Answer({ qstText, isTrue, isCorrect, links }) {
@@ -52,7 +53,7 @@ function Answer({ qstText, isTrue, isCorrect, links }) {
               links.map((link, key) => (
                 <li key={key}>
                   <a href={link} target="_blank" rel="noopener noreferrer">
-                    {link}
+                    <SourceLink>{link}</SourceLink>
                   </a>
                 </li>
               ))}
