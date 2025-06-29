@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   align-items: center;
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   span {
     font-family: ${(props) => props.theme.fonts.pixel};
-    font-size: ${(props) => props.theme.fontSizes.large};
+    font-size: 1.5rem;
   }
 `;
 
