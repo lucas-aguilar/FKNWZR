@@ -15,7 +15,7 @@ function Header() {
       </p>
       <p>
         You will have 60 seconds to answer everything. If you have time left,
-        the seconds will be added to your total points.
+        10% of the seconds will be added to your total points.
       </p>
       <span>Are you ready?</span>
       <PlayCTABtn />

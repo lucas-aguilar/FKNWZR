@@ -47,18 +47,12 @@ function Result() {
   );
 
   const backClickAction = () => {
-    navigate("/inicio");
+    navigate("/start");
   };
 
   React.useEffect(() => {
-    if (
-      !questions ||
-      !questions.length ||
-      !answers ||
-      !answers.length ||
-      !secondsLeft
-    )
-      navigate("/inicio");
+    if (!questions || !questions.length || !answers || !answers.length)
+      navigate("/start");
   });
 
   return (
@@ -77,12 +71,15 @@ function Result() {
             />
           ))
         : ""}
-      {timeBonus && (
+      {timeBonus ? (
         <TimeBonus className="px-3">
           <b>
-            Bônus por tempo: {secondsLeft} seg. = {timeBonus} pts
+            Time bonus: {secondsLeft} sec. = {timeBonus}{" "}
+            {timeBonus > 1 ? "pts" : "pt"}
           </b>
         </TimeBonus>
+      ) : (
+        ""
       )}
     </Container>
   );

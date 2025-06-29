@@ -10,10 +10,10 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/inicio" element={<Dashboard />} />
-      <Route path="/instrucoes" element={<Instructions />} />
-      <Route path="/desafio" element={<Challenge />} />
-      <Route path="/resultado" element={<Result />} />
+      <Route path="/start" element={<Dashboard />} />
+      <Route path="/instructions" element={<Instructions />} />
+      <Route path="/challenge" element={<Challenge />} />
+      <Route path="/results" element={<Result />} />
     </Routes>
   );
 }

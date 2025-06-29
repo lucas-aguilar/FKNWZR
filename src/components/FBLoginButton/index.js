@@ -8,7 +8,7 @@ function FBLoginButton() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/inicio");
+    navigate("/start");
   }
   return (
     <LoginButton onClick={handleClick}>

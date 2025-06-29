@@ -7,7 +7,7 @@ function PlayCTABtn({ hasDone }) {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/instrucoes");
+    navigate("/instructions");
   }
 
   return (

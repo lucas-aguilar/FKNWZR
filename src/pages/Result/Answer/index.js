@@ -36,17 +36,17 @@ function Answer({ qstText, isTrue, isCorrect, links }) {
         </Header>
         <QuestionText>{qstText}</QuestionText>
         {isTrue ? (
-          <QuestionLinks onClick={handleShow}>Check links</QuestionLinks>
+          <QuestionLinks onClick={handleShow}>Check source</QuestionLinks>
         ) : (
           ""
         )}
       </Container>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{qstText}</Modal.Title>
+          <Modal.Title>Source:</Modal.Title>
         </Modal.Header>
         <Modal.Body className="px-5">
-          <h3> Links das notícias: </h3>
+          <h3> {qstText} </h3>
           <ul>
             {links.length &&
               links.map((link, key) => (

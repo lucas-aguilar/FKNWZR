@@ -7,7 +7,7 @@ function EnterButton() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/inicio");
+    navigate("/start");
   }
   return <Btn onClick={handleClick}>Lets go!</Btn>;
 }

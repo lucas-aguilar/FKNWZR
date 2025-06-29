@@ -5,7 +5,7 @@ function PlayCTABtn() {
   const navigate = useNavigate();
 
   function handleClick() {
-    navigate("/desafio");
+    navigate("/challenge");
   }
 
   return <Container onClick={handleClick}>Play now!</Container>;

@@ -7,6 +7,7 @@ import { Container } from "./styles";
 import Topbar from "./Topbar";
 import Question from "./Question";
 
+const TOTAL_TIME = 60;
 function Challenge() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ function Challenge() {
   const [curQuestion, setCurQuestion] = useState(challengeQuestions[0]);
   const [curQstIndex, setCurQstIndex] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [secondsLeft, setSecondsLeft] = useState(50);
+  const [secondsLeft, setSecondsLeft] = useState(TOTAL_TIME);
 
   const goToResults = useCallback(() => {
     dispatch({
@@ -28,7 +29,7 @@ function Challenge() {
       type: "SET_DONE",
       isDone: true,
     });
-    navigate("/resultado");
+    navigate("/results");
   }, [dispatch, navigate, secondsLeft]);
 
   const nextQuestion = (answer) => {
